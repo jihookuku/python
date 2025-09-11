@@ -28,3 +28,40 @@ for n in b: # for in 을 이용하면 list 에 있는 값을 순서대로 하나
     if n == 3:
         print(f'3이 있는 인덱스 : {idx}')
     idx += 1
+
+#리스트 요소 삭제
+# del a[3] 과  a.remove(3)
+# del 은 특정 인덱스의 값을 지운다.
+# remove 는 해당 값을 지운다.(한개만)
+print(f'a : {a}')
+a.remove(3)
+print(f'a : {a}')
+
+# pop() = append() 의 반대개념
+# 맨마지막 요소를 빼낸다.(리스트에서는 사라진다.)
+val = a.pop()
+print(f'빼낸 값 : {val} / a: {a}')
+val = a.pop()
+print(f'빼낸 값 : {val} / a: {a}')
+
+# 리스트 확장(더하기와 비슷한 개념)
+print(a)
+a.extend(b)
+print(a)
+
+#count(val) 특정한 값이 해당 리스트에 몇개 있는지 확인
+print(a)
+print(f'a 안에 3인 값은 {a.count(3)} 개  가 있다.')
+print(f'a 안에 9인 값은 {a.count(9)} 개  가 있다.')# 없는 값은 0을 반환
+
+# a 안에 있는 모든 3을 지워주세요
+# a에 있는 3 지우기, 못찾을때 까지? 갯수가 0개 일때 까지?
+# for n in a:
+#     if n == 3:
+#         a.remove(3)
+
+while True:
+    a.remove(3)
+    if a.count(3) == 0:
+        break
+print(a)
