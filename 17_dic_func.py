@@ -46,3 +46,16 @@ members = {
 }
 
 # 90이상인 사람의 이름만 출력
+for item in members.items():
+    if item[1] >=90:
+        print(f'이름 : {item[0]}')
+
+
+
+
+
+
+
+
+
+
