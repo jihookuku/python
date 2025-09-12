@@ -20,10 +20,12 @@ b = [3,4,1,2,3,4,5,6,1,3,2] # 모든 3을 찾아 보세요.
 # print(f'3의 값은 {idx}번에 있다.')
 
 idx = 0
-# while True:
-#     idx = b.index(3,idx)
-#     print(f'3의 값은 {idx}번에 있다.')
-#     idx += 1
+while True:
+     idx = b.index(3,idx)
+     print(f'3의 값은 {idx}번에 있다.')
+     idx += 1
+
+
 for n in b: # for in 을 이용하면 list 에 있는 값을 순서대로 하나씩 뽑아낸다.
     if n == 3:
         print(f'3이 있는 인덱스 : {idx}')
