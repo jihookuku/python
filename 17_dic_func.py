@@ -39,3 +39,10 @@ for key in dic.keys():
 # 2. 키와 값을 동시에 뽑아낸 다음 거기서 키와 값을 각각 추출하는 방식
 for item in dic.items():
     print(f'{item[0]}={item[1]}')
+
+members = {
+    'kim':63, 'lee':88, 'park':97, "gang":77, "hwang":100, "ga":65,
+    "na":92, "la":90, "wang":100, "gu":79
+}
+
+# 90이상인 사람의 이름만 출력
