@@ -9,3 +9,9 @@ print(dic.keys())
 
 for item in dic.keys():
     print(item)
+
+# dict_keys -> list 로 변환
+keys = list(dic.keys());
+print(keys)
+
+
