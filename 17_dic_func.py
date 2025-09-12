@@ -17,4 +17,6 @@ print(keys)
 # dic.values() : 특정 사전의 값만 가져와 dict_values 라는 객체를 반환
 print(dic.values())
 # list 로 변경해서 values 라는 변수에 담아보자
+values = list(dic.values())
+print(values)
 
