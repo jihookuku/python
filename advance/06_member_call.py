@@ -19,13 +19,17 @@ class Car:
             print('시동이 이미 걸려있습니다.')
 
     def change(self, gear):
-        print(f'{self.gear} 단으로 변속 했습니다.')
+        print(f'{gear} 단으로 변속 했습니다.')
         self.gear += gear
         
 # Car 클래스를 객체화(복사)
 # 객체를 통해 사용하고 싶은 멤버 호출
-
-
+car = Car()
+# 시동 걸기
+car.start()
+# 변속하기
+car.change(3)
+print(f'현재 car 의 gear 단수 : {car.gear}')
 
 
 
