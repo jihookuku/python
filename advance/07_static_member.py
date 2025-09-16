@@ -4,6 +4,7 @@ class Robot:
     def how_count(self):
         print(f'객체 메서드 : {self.count}')
 
+    @classmethod # 원본영역의 변수를 건드릴수 있다는 표시
     def std_count(self):
         print(f'클래스 메서드 : {self.count}')
 
@@ -28,7 +29,7 @@ r2.how_count()
 
 #마찬가지로 원본의 내용을 확인하고 싶다면 원본영역으로 가서 확인해야 한다.
 print(f'원본 count : {Robot.count}')
-print(f'원본 함수 : {Robot.std_count()}')
+Robot.std_count()
 
 
 
