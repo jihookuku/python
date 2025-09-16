@@ -21,3 +21,25 @@ class Car:
     def change(self, gear):
         print(f'{self.gear} 단으로 변속 했습니다.')
         self.gear += gear
+        
+# Car 클래스를 객체화(복사)
+# 객체를 통해 사용하고 싶은 멤버 호출
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
