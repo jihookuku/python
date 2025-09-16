@@ -5,9 +5,12 @@ class Runner:
     def sprint(self):
         pass
 
-
 class Jumper:
-    pass
+    def jump(self):
+        pass
+
+    def high_jump(self):
+        pass
 
 class Person(Jumper, Runner):
     pass
