@@ -26,5 +26,20 @@ print(f'r2.count : {r2.count}')
 r1.how_count()
 r2.how_count()
 
+#마찬가지로 원본의 내용을 확인하고 싶다면 원본영역으로 가서 확인해야 한다.
+print(f'원본 count : {Robot.count}')
+print(f'원본 함수 : {Robot.std_count()}')
+
+
+
+
+
+
+
+
+
+
+
+
 
 
