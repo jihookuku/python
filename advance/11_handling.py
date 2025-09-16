@@ -1,3 +1,5 @@
+import traceback
+
 num_list = [1,2,3,1,2,3,1,2,3,1,2,3,4,5,6]
 
 idx = 0
@@ -9,6 +11,7 @@ try:
         idx += 1
 except ValueError as e:
     print(e) # 예외에 대한 대략적인 정보 출력
+    traceback.print_exc() # 상세한 예외 정보(개발자에게 필요한 정보)
     print('더이상 3을 찾을 수 없습니다.')
 finally:
     print('====끝====')
